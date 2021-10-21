@@ -2,18 +2,19 @@ import pygame
 import random
 import numpy as np
 
-
 WIN_WIDTH = 500
 WIN_HEIGHT = 500
 
 pygame.init()
 pygame.font.init()
 myfont = pygame.font.SysFont('Helvetica Neue',70)
+
 #Making the window
 win = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 color = (187, 173, 160)
 win.fill(color)
 pygame.display.set_caption("2048")
+
 #Setting colors of all the numbers
 COLOR2 = (238, 228, 218)
 COLOR4 = (238,225,201)
@@ -27,7 +28,6 @@ COLOR512 = (252, 197, 20)
 COLOR1024 = (255, 195, 0)
 COLOR2048 = (255, 230, 0)
 N = 4
-
 
 class Grid:
 
@@ -297,8 +297,6 @@ class Grid:
                         self.move_number('d')  
                         self.draw() 
                     
-
-                
                 if self.isfilled():
                     print('Game Over')    
                     GameOver = True
@@ -322,9 +320,6 @@ class Grid:
                         redraw = True
                     elif keys[pygame.K_q]: 
                         running = False 
-                      
-
-               
 
 if __name__ == '__main__':
    game = Grid()
