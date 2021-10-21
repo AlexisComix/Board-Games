@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Fri Jul 17 15:42:19 2020
 
@@ -159,7 +158,6 @@ def check_columns():
   else:
     return None
 
-
 # Check the diagonals for a win
 def check_diagonals():
   # Set global variables
@@ -179,7 +177,6 @@ def check_diagonals():
   else:
     return None
 
-
 # Check if there is a tie
 def check_for_tie():
   # Set global variables
@@ -192,7 +189,6 @@ def check_for_tie():
   else:
     return False
 
-
 # Flip the current player from X to O, or O to X
 def flip_player():
   # Global variables we need
@@ -203,7 +199,6 @@ def flip_player():
   # Or if the current player was O, make it X
   elif current_player == "O":
     current_player = "X"
-
 
 # ------------ Start Execution -------------
 # Play a game of tic tac toe
