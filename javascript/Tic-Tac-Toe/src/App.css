@@ -1,0 +1,47 @@
+
+.square {
+  float: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  display: inline-block;
+  color: rgb(29, 22, 22);
+  font-weight: bold;
+  background-color: #20a0eb;
+  margin: 10px;
+  border: 1px solid black;
+}
+ 
+
+.row-board:after {
+  clear: both;
+  content: "";
+  display: table;
+ }
+
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;  
+ }
+
+ul {
+  padding-left: 30px;
+ }
+ .game-info {
+  margin-left: 20px;
+ }
+ .status {
+  margin-bottom: 10px;
+ }
