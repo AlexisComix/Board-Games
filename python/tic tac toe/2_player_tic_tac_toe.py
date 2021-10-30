@@ -1,4 +1,5 @@
-# --------- Global Variables -----------
+
+# * --------- Global Variables -----------
 
 # Will hold our game board data
 board = ["-", "-", "-",
@@ -15,7 +16,7 @@ winner = None
 current_player = "X"
 
 
-# ------------- Functions ---------------
+# * ------------- Functions ---------------
 
 # Play a game of tic tac toe
 def play_game():
@@ -194,7 +195,8 @@ def flip_player():
   elif current_player == "O":
     current_player = "X"
 
-# ------------ Start Execution -------------
+# * ------------ Start Execution -------------
+
 # Play a game of tic tac toe
 if __name__ == "__main__":
   play_game()
