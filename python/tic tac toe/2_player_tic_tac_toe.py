@@ -196,4 +196,5 @@ def flip_player():
 
 # ------------ Start Execution -------------
 # Play a game of tic tac toe
-play_game()
+if __name__ == "__main__":
+  play_game()
