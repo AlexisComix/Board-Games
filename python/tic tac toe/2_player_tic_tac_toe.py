@@ -1,9 +1,3 @@
-"""
-Created on Fri Jul 17 15:42:19 2020
-
-@author: Tajammul Naeem
-"""
-
 # --------- Global Variables -----------
 
 # Will hold our game board data
