@@ -49,7 +49,6 @@ def display_board():
   print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
   print("\n")
 
-
 # Handle a turn for an arbitrary player
 def handle_turn(player):
 
