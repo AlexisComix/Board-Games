@@ -41,7 +41,6 @@ def play_game():
   elif winner == None:
     print("Tie.")
 
-
 # Display the game board to the screen
 def display_board():
   print("\n")
