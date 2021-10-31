@@ -79,12 +79,10 @@ def handle_turn(player):
   # Show the game board
   display_board()
 
-
 # Check if the game is over
 def check_if_game_over():
   check_for_winner()
   check_for_tie()
-
 
 # Check to see if somebody has won
 def check_for_winner():
@@ -103,7 +101,6 @@ def check_for_winner():
     winner = diagonal_winner
   else:
     winner = None
-
 
 # Check the rows for a win
 def check_rows():
@@ -126,7 +123,6 @@ def check_rows():
   # Or return None if there was no winner
   else:
     return None
-
 
 # Check the columns for a win
 def check_columns():
