@@ -178,16 +178,16 @@ class Grid:
         """
         x = 25
         y = 25
-        rect = np.zeros((4,4),dtype=pygame.Rect)
+        rect = np.zeros((N,N),dtype=pygame.Rect)
         rectwidth = 100
         rectheight = 100
         rectgap = 20
         
-        text = np.zeros((4,4),dtype=pygame.Surface)
+        text = np.zeros((N,N),dtype=pygame.Surface)
         
-        for i in range(4):
+        for i in range(N):
             x = 15
-            for j in range(4):
+            for j in range(N):
                 if(self.grid[i][j] != 0):
                     rect[i][j] = pygame.Rect((x, y, rectwidth, rectheight))
                     text[i][j] = myfont.render(str(self.grid[i][j]), True, (0,0,0))
@@ -203,8 +203,8 @@ class Grid:
         rect,text = self.createRect()
         win.fill(color)
 
-        for i in range(4):
-            for j in range(4):
+        for i in range(N):
+            for j in range(N):
                 if(rect[i][j] != 0):
                     r = rect[i][j]
                     if(self.grid[i][j] == 2):
